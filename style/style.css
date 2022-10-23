@@ -1,0 +1,101 @@
+/* pc버전css 시작*/
+/* 탑바 CSS 시작 */
+.pc_top_bar{
+    height:80px;
+    border-bottom:1px solid rgba(0,0,0,0.1);
+}
+
+.con{
+    width: var(--site-width);
+    margin-left: auto;
+    margin-right: auto; 
+    height: 100%;
+    display: flex;
+}
+.con > a:first-child{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+.con > a:first-child > img{
+    height: 70px;
+}
+.menu_1{
+    margin-left:auto;
+    display: flex;
+    align-items: center;
+}
+
+.menu_1 > .menu_1_ul{
+    height: 100%;
+    display: flex;
+}
+.menu_1 > .menu_1_ul > li > a{
+    display: flex;
+    height:100%;
+    padding:10px;
+    align-items: center;
+}
+.buy_btn{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    background-color: #FFDD00;
+    border-radius: 23px;
+    padding-left: 13px;
+    padding-right: 13px;
+}
+.globe{
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+.globe_area{
+    width:50px;
+    padding:13px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+.globe_img{
+
+    width:25px
+}
+
+.menu_1 > .menu_1_ul > li:hover > a{
+    text-decoration: underline;
+    position: relative;
+
+}
+.menu_1 > .menu_1_ul > li:hover > a{
+    text-decoration: underline;
+    position: relative;
+
+}
+.menu_1 > .menu_1_ul > li> a::after{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -1px;
+    height: 2px;
+    width: 0;
+    background-color: black;
+}
+.menu_1 > .menu_1_ul > li:hover> a::after{
+    width: 100%;
+    transition: width .2s;
+}
+/* 탑바 CSS 끝 */
+
+
+.con-min-width{
+    min-width: var(--site-width);
+}
+
+:root{
+    --site-width:1080px
+}
+/* pc버전css 끝*/
