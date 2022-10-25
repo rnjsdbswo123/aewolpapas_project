@@ -131,6 +131,9 @@
 
 @media screen and (min-width:768px) and (max-width: 1200px) {
     body{font-size: 15px;}
+    .con{
+        width: 768px;
+    }
     .top_banner_img{
         height:50vw;
         background-image: url(../img/banner.jpg);
@@ -148,6 +151,10 @@
 
 @media screen and (max-width:767px){ 
 	/* Mobile */
+    .con{
+        width: 600px;
+
+    }
     .top_banner_img{
         height:105vw;
         background-image: url(../img/ggong.png);
@@ -161,4 +168,5 @@
         height: 110vw;
         z-index: -1;
     }
+    
 }
