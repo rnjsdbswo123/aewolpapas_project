@@ -146,9 +146,19 @@
 }
 
 
-@media screen and (min-width:768px) and (max-width: 1023px) {
-	/* Tablet */
-}
 @media screen and (max-width:767px){ 
 	/* Mobile */
+    .top_banner_img{
+        height:105vw;
+        background-image: url(../img/ggong.png);
+        width:90%;
+        background-size: 90% auto;
+        background-position: center 30px;
+    }
+    .background_line{
+        background-color: #FFEA53;
+        width:100%;
+        height: 110vw;
+        z-index: -1;
+    }
 }
