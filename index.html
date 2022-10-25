@@ -18,26 +18,64 @@
                 <img src="./img/logo.png" alt="">
             </a>
             <!-- 로고 구현 끝-->
-            <!-- 탑 메뉴 시작 -->
-            <nav class="menu_1">
-                <ul class=menu_1_ul>
-                    <li><a class="menu_1_item" href="#"></a></li>
-                    <li><a class="menu_1_item" href="#"></a></li>
-                    <li><a class="menu_1_item" href="#"></a></li>
-                    <li><a class="menu_1_item" href="#"></a></li>
-                </ul>
-            </nav>
-            <!-- 탑 메뉴 끝 -->
-            <!-- 구매하기 버튼 시작-->
-            <a href="#" class="buy_btn">
-                구매하러가기
-            </a>
-            <!-- 구매하기 버튼 끝 -->
-            <div class="globe">
-                <a class="globe_area"href="#">
-                    <img class="globe_img"src="./img/globe.png" alt="">
+
+            <!-- pc&tablet 메뉴 영역 -->
+            <div class="menu_area">
+                <!-- 탑 메뉴 시작 -->
+                <nav class="menu_1">
+                    <ul class=menu_1_ul>
+                        <!-- 자바스크립트 리스트 업로드 -->
+                    </ul>
+                </nav>
+                <!-- 탑 메뉴 끝 -->
+                <!-- 구매하기 버튼 시작-->
+                <a href="#" class="buy_btn">
+                    구매하러가기
                 </a>
+                <!-- 구매하기 버튼 끝 -->
+                <div class="globe">
+                    <a class="globe_area"href="#">
+                        <img class="globe_img"src="./img/globe.png" alt="">
+                    </a>
+                </div>
             </div>
+            <!-- pc&tablet 메뉴 영역 끝-->
+
+            <!-- 모바일 메뉴 영역 시작 -->
+            <div class="mobile_menu_btn">
+                <a onclick=mobileMenuOn() href="#">
+                    <img src="./img/menu.png" alt="">
+                </a>
+
+                <div id="mobile_menu" class="mobile_menu_area">
+                    <!-- 탑 메뉴 시작 -->
+                    <a onclick=mobileMenuOff() href="#">
+                        <img class="close_img"src="./img/close.png" alt="">
+                    </a>
+                    <nav class="menu_1">
+                        <ul class=menu_1_ul>
+                            <!-- 자바스크립트 리스트 업로드 -->
+                        </ul>
+                    </nav>
+                    <!-- 탑 메뉴 끝 -->
+                    <!-- 구매하기 버튼 시작-->
+                    <a href="#" class="buy_btn">
+                        <span>구매하러가기</span>
+                    </a>
+                    <!-- 구매하기 버튼 끝 -->
+                    <div class="globe">
+                        <a class="globe_area"href="#">
+                            <img class="globe_img"src="./img/globe.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- 모바일 메뉴 영역 끝 -->
+
+
+
+
+
         </div>
     </header>
     <!-- 배너박스 시작-->

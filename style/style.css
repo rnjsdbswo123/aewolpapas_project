@@ -19,10 +19,13 @@
 }
 .con > a:first-child > img{
     height: 70px;
+    z-index: 2;
+}
+.menu_area{
+    display: flex;
+    margin-left: auto;
 }
 .menu_1{
-    margin-left:auto;
-    display: flex;
     align-items: center;
 }
 
@@ -113,6 +116,9 @@
     height: 519px;
     z-index: -1;
 }
+.mobile_menu_btn{
+    display: none;
+}
 
 
 
@@ -133,7 +139,6 @@
     body{font-size: 15px;}
     .top_banner_img{
         height:50vw;
-        background-image: url(../img/banner.jpg);
         width:100%;
         background-size: 100% auto;
     }
@@ -141,6 +146,8 @@
     .background_line{
         display:none;
     }
+    .menu_area{display: flex;}
+    .mobile_menu_btn{display: none;}
 
 
 }
@@ -148,17 +155,100 @@
 
 @media screen and (max-width:767px){ 
 	/* Mobile */
+    .pc_top_bar{
+        height:50px;
+    }
+    .con > a:first-child > img{
+        height: 40px;
+    }
+    .menu_area{
+        display: none;
+    }
+    .mobile_menu_btn{
+        display: flex;
+        margin-left: auto;
+        margin-right: 20px;
+    }
+    .mobile_menu_btn > a{
+        display: flex;
+        align-items: center;
+    }
+    .mobile_menu_btn > a > img{
+        width:30px;
+    }
+    .mobile_menu_area > a{
+        margin-right: 20px;
+        margin-top: 15px;
+        margin-left: auto;
+        
+    }
+    .mobile_menu_area > a > .close_img{
+        width:30px;
+        
+    }
+    .mobile_menu_area::before{
+        content: '';
+        position: relative;
+    }
+    .mobile_menu_area{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: antiquewhite;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+    .mobile_menu_area > .menu_1 > .menu_1_ul{
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .mobile_menu_area > .menu_1 > .menu_1_ul > li{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mobile_menu_area > .menu_1 > .menu_1_ul > li:first-child{
+        margin-top: 40px;
+    }
+    .mobile_menu_area > .buy_btn{
+        align-items: center;
+        text-align: center;
+        height: 40px;
+        margin: 40px;
+    }
+    .mobile_menu_area > .buy_btn > span{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .globe_area{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .globe{
+        margin-left: 0;
+    }
+
+
+
+
     .top_banner_img{
-        height:105vw;
+        height:125vw;
         background-image: url(../img/ggong.png);
         width:90%;
         background-size: 90% auto;
-        background-position: center 30px;
+        background-position: center 40vw;
     }
     .background_line{
         background-color: #FFEA53;
         width:100%;
-        height: 519px;
+        height: 120vw;
         z-index: -1;
     }
 }
