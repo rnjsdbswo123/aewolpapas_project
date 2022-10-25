@@ -93,7 +93,7 @@
 /* 탑배너 CSS 시작 */
 
 .top_banner_img{
-    height:884px;
+    height:600px;
     background-image: url(../img/banner.jpg);
     width:1200px;
     background-size: 1200px auto;
@@ -116,6 +116,9 @@
 
 
 
+
+@media screen and (min-width:1200px) {
+	
 .con-min-width{
     min-width: var(--site-width);
 }
@@ -124,3 +127,28 @@
     --site-width:1080px
 }
 /* pc버전css 끝*/
+}
+
+@media screen and (min-width:768px) and (max-width: 1200px) {
+    body{font-size: 15px;}
+    .top_banner_img{
+        height:50vw;
+        background-image: url(../img/banner.jpg);
+        width:100%;
+        background-size: 100% auto;
+    }
+	/* Tablet */
+    .background_line{
+        display:none;
+    }
+
+
+}
+
+
+@media screen and (min-width:768px) and (max-width: 1023px) {
+	/* Tablet */
+}
+@media screen and (max-width:767px){ 
+	/* Mobile */
+}
