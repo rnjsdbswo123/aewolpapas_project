@@ -386,7 +386,7 @@
     }
     .happychicken_area{
         width:100%;
-        flex-direction: column;
+        flex-direction: column-reverse;
         height:850px;
         padding-bottom: 50px;
 
