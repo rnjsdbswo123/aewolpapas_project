@@ -148,7 +148,6 @@
 }
 .happychicken{
     display: block;
-    margin-top: 40px;
     width:100%;
     height: 600px;
     padding-bottom: 30px;
@@ -157,6 +156,7 @@
 .happychicken_area{
     background-color: rgba(255,221,0,0.1);
     justify-content: space-between;
+    height:600px;
     
 }
 .happychicken_img{
@@ -373,7 +373,19 @@
     .happychicken{
         height: 900px;
     }
+    .happychicken_img{
+        width:100%;
+        margin: 0;
+
+    }
+    .happychicken_img img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width:100%;
+    }
     .happychicken_area{
+        width:100%;
         flex-direction: column;
         height:850px;
         padding-bottom: 50px;
@@ -382,12 +394,20 @@
     }
     .happychicken > .happychicken_area > .happychicken_description{
         margin-top: 30px;
-    }
-    .happychicken > .happychicken_area > .happychicken_description{
         align-items: center;
         text-align: center;
-
     }
-    
+    .happychicken > .happychicken_area > .happychicken_description h1{
+        
+        font-size: 5vw;
+    }
+    .happychicken > .happychicken_area > .happychicken_description span{
+        
+        font-size: 3.2vw;
+    }
+    .happychicken > .happychicken_area > .happychicken_description > h1::after{
+        height: 3vw;
+    }
+
 
 }
