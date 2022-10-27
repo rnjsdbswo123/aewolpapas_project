@@ -135,16 +135,66 @@
 }
 .top_banner > .top_banner_img > .top_banner_font_area > h1{
     font-size: 40px;
-    margin-top: 70px;
-    line-height: 1.2;
+    margin-top: 90px;
+    margin-left: 50px;
+    line-height: 1.4;
 }
 .top_banner > .top_banner_img > .top_banner_font_area > span{
     font-size:  20px;
-    margin-top: 200px;
+    margin-top: 220px;
+    margin-left: 50px;
     line-height: 1.8;
     color:rgba(0,0,0,0.6)
 }
+.happychicken{
+    display: block;
+    margin-top: 40px;
+    width:100%;
+    height: 600px;
+    padding-bottom: 30px;
 
+}
+.happychicken_area{
+    background-color: rgba(255,221,0,0.1);
+    justify-content: space-between;
+    
+}
+.happychicken_img{
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.happychicken_area > .happychicken_img > img{
+    width: 400px;
+    height: 600px;
+}
+.happychicken > .happychicken_area > .happychicken_description{
+    margin-top: 20%;
+}
+.happychicken > .happychicken_area > .happychicken_description > h1{
+    display: inline;
+    font-size: 30px;
+    position: relative;
+}
+.happychicken > .happychicken_area > .happychicken_description > h1::after{
+    content: '';
+    top:10px;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color:rgba(255,221,0,0.8);
+    position: absolute;
+    width:100%;
+    height:35px;
+    z-index:-1;
+
+}
+.happychicken > .happychicken_area > .happychicken_description > span{
+    display: block;
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 1.5;
+}
 @media screen and (min-width:1200px) {
 	
 .con-min-width{
@@ -172,15 +222,37 @@
     .mobile_menu_btn{display: none;}
 
     .top_banner > .top_banner_img > .top_banner_font_area > h1{
-        margin-left: 40px;
+        margin-top:7vw;
+        margin-left: 80px;
         font-size: 3.5vw;
     }
     .top_banner > .top_banner_img > .top_banner_font_area > span{
-        margin-top: 20vw;
-        margin-left: 40px;
+        margin-top: 18vw;
+        margin-left: 80px;
         font-size: 1.7vw;
     }
+    .happychicken_img{
+        width:50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .happychicken_area > .happychicken_img > img{
+        padding-top: 40%;
+        padding-left: 20%;
+        width: 90%;
+        height: auto;
+    }
+    .happychicken > .happychicken_area > .happychicken_description > h1{
+        font-size: 3vw;
+    }
 
+    .happychicken > .happychicken_area > .happychicken_description > span{
+        display: inline-block;
+        font-size: 2vw;
+    }
+    .happychicken{
+        height:55vw;
+    }
 
 
 }
@@ -267,35 +339,55 @@
     .globe{
         margin-left: 0;
     }
-
-
-
-
     .top_banner_img{
-        height:125vw;
+        height:560px;
         background-image: url(../img/ggong.png);
         width:90%;
-        background-size: 90% auto;
-        background-position: center 40vw;
+        background-size: 340px auto;
+        background-position: center 200px;
+        
     }
     .background_line{
         background-color: #FFEA53;
         width:100%;
-        height: 120vw;
+        height: 537px;
         z-index: -1;
     }
     
     .top_banner > .top_banner_img > .top_banner_font_area > h1{
-
-        font-size: 8vw;
-        margin-top: 10vw;
+        margin-left: 0;
+        text-align: center;
+        font-size: 25px;
+        margin-top: 40px;
         line-height: 1.2;
         
     }
     .top_banner > .top_banner_img > .top_banner_font_area > span{
-        font-size:  20px;
-        margin-top: 35vw;
+        margin-left: 0;
+        text-align: center;
+        font-size:  15px;
+        margin-top: 120px;
         line-height: 1.8;
         color:rgba(0,0,0,0.7)
     }
+    .happychicken{
+        height: 900px;
+    }
+    .happychicken_area{
+        flex-direction: column;
+        height:850px;
+        padding-bottom: 50px;
+
+        
+    }
+    .happychicken > .happychicken_area > .happychicken_description{
+        margin-top: 30px;
+    }
+    .happychicken > .happychicken_area > .happychicken_description{
+        align-items: center;
+        text-align: center;
+
+    }
+    
+
 }
