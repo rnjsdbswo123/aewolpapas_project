@@ -397,7 +397,7 @@
     .happychicken_area{
         width:100%;
         flex-direction: column-reverse;
-        height:90vw;
+        height:500px;
         padding-bottom: 50px;
         background-color: white;
 
@@ -405,19 +405,23 @@
     }
     .happychicken > .happychicken_area > .happychicken_description{
         margin-top: 30px;
+        margin-bottom: 20px;
         align-items: center;
         text-align: center;
     }
     .happychicken > .happychicken_area > .happychicken_description h1{
         margin-bottom: 5px;
-        font-size: 5vw;
+        font-size: 20px;
+        z-index: 2;
     }
     .happychicken > .happychicken_area > .happychicken_description span{
         
-        font-size: 3.2vw;
+        font-size: 12px;
     }
     .happychicken > .happychicken_area > .happychicken_description > h1::after{
-        height: 3vw;
+        height: 20px;
+        background-color: #FFDD00;
+        z-index: -1;
     }
 
 
