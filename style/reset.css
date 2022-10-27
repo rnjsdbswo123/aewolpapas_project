@@ -60,3 +60,12 @@ a{
     font-style: normal;
 }
 body{font-family:'GmarketSansMedium'}
+::selection{
+	background: #FFDD00;
+	color:black;
+}
+hr{
+	height: 22px;
+	background-color: rgba(0,0,0,0.1);
+	border: 1px solid #fafafa;
+}
