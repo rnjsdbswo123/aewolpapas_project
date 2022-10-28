@@ -1,8 +1,15 @@
 /* pc버전css 시작*/
 /* 탑바 CSS 시작 */
+body{margin-top: 80px;}
 .pc_top_bar{
     height:80px;
     border-bottom:1px solid rgba(0,0,0,0.1);
+    position: fixed;
+    left:0;
+    top:0;
+    right:0;
+    z-index: 10;
+    background-color: white;
 }
 
 .con{
@@ -270,13 +277,15 @@
 @media screen and (max-width:767px){ 
 	/* Mobile */
     .pc_top_bar{
-        height:50px;
+        height:80px;
+
     }
     .con > a:first-child > img{
-        height: 40px;
+        height: 60px;
     }
     .menu_area{
         display: none;
+
     }
     .mobile_menu_btn{
         display: flex;

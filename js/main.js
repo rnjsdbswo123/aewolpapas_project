@@ -17,6 +17,7 @@ function print_Menu_li(){
 
 function mobileMenuOn(){
     document.getElementById('mobile_menu').style.display="flex"
+    document.getElementById('mobile_menu').style.height="520vw"
 }
 function mobileMenuOff(){
     document.getElementById('mobile_menu').style.display="none"
