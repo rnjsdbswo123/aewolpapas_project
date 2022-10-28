@@ -1,6 +1,8 @@
 /* pc버전css 시작*/
 /* 탑바 CSS 시작 */
 body{margin-top: 80px;}
+section{border-bottom: 15px solid rgba(0,0,0,0.1);}
+
 .pc_top_bar{
     height:80px;
     border-bottom:1px solid rgba(0,0,0,0.1);
@@ -18,6 +20,7 @@ body{margin-top: 80px;}
     margin-right: auto; 
     height: 100%;
     display: flex;
+    
 }
 .con > a:first-child{
     margin-left: 10px;
@@ -112,6 +115,7 @@ body{margin-top: 80px;}
     position: relative;
 }
 .top_banner{
+    border: 0px;
     position: relative;
 }
 .background_line{
@@ -153,36 +157,36 @@ body{margin-top: 80px;}
     line-height: 1.8;
     color:rgba(0,0,0,0.6)
 }
-.happychicken{
+.content_box {
     display: block;
     width:100%;
     height: 500px;
     padding-bottom: 30px;
 
 }
-.happychicken_area{
+.content_box_area{
     background-color: rgba(255,221,0,0.1);
     justify-content: space-between;
     height:500px;
     
 }
-.happychicken_img{
-    width:50%;
-    margin:auto auto auto 50px;
+.content_img{
+    width:400px;
+    margin:auto auto auto auto;
 }
-.happychicken_area > .happychicken_img > img{
+.content_box_area > .content_img > img{
     width: 400px;
     height: 300px;
 }
-.happychicken > .happychicken_area > .happychicken_description{
-    margin-top: 15%;
+.content_box > .content_box_area > .content_description{
+    margin:auto;
 }
-.happychicken > .happychicken_area > .happychicken_description > h1{
+.content_box > .content_box_area > .content_description > h1{
     display: inline;
     font-size: 30px;
     position: relative;
 }
-.happychicken > .happychicken_area > .happychicken_description > h1::after{
+.content_box > .content_box_area > .content_description > h1::after{
     content: '';
     top:10px;
     bottom:0;
@@ -195,12 +199,29 @@ body{margin-top: 80px;}
     z-index:-1;
 
 }
-.happychicken > .happychicken_area > .happychicken_description > span{
+.content_box > .content_box_area > .content_description > span{
     display: block;
     margin-top: 30px;
     font-size: 18px;
     line-height: 1.5;
     color:rgba(0,0,0,0.6)
+}
+.content_box > .content_box_area > .content_description > ul{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 2;
+    color:rgba(0,0,0,0.6)
+}
+.Certification_details_area{
+    flex-direction: row-reverse;
+}
+.Certification_details_area > .Certification_detail_img{
+
+    margin-left:auto;
+}
+.Certification_details_area > .Certification_details_description{
+    margin-left: 50px;
 }
 @media screen and (min-width:1200px) {
 	
@@ -251,25 +272,32 @@ body{margin-top: 80px;}
         width: 100%;
         height: auto;
     }
-    .happychicken > .happychicken_area > .happychicken_description{
+    .content_box > .content_box_area > .content_description{
         margin-top:auto;
         margin-bottom: auto;
     }
-    .happychicken > .happychicken_area > .happychicken_description > h1{
+    .content_box > .content_box_area > .content_description > h1{
         font-size: 2.7vw;
-        margin-left:  80px;
+        margin-left: 80px;
     }
 
-    .happychicken > .happychicken_area > .happychicken_description > span{
+    .content_box > .content_box_area > .content_description > span{
         display: inline-block;
         font-size: 1.7vw;
         margin-left:  80px;
 
     }
-    .happychicken{
+    .content_box{
         height:55vw;
     }
-
+    .Certification_details > .Certification_details_area > .Certification_details_description > h1{
+        font-size: 2.7vw;
+        margin-left: 10px;
+    }
+    .Certification_details > .Certification_details_area > .Certification_details_description > ul{
+        font-size: 1.7vw;
+        margin-left: 10px;
+    }
 
 }
 
@@ -388,22 +416,22 @@ body{margin-top: 80px;}
         line-height: 1.8;
         color:rgba(0,0,0,0.7)
     }
-    .happychicken{
+    .content_box{
         margin-top:20px;
-        height:90vw;
+        height:540px;
     }
-    .happychicken_img{
+    .content_box_img{
         width:100%;
         margin: 0;
 
     }
-    .happychicken_img img{
+    .content_box_img img{
         display: block;
         margin-left: auto;
         margin-right: auto;
         width:100%;
     }
-    .happychicken_area{
+    .content_box_area{
         width:100%;
         flex-direction: column-reverse;
         height:500px;
@@ -412,26 +440,34 @@ body{margin-top: 80px;}
 
         
     }
-    .happychicken > .happychicken_area > .happychicken_description{
+    .content_box > .content_box_area > .content_description{
         margin-top: 30px;
         margin-bottom: 20px;
         align-items: center;
         text-align: center;
     }
-    .happychicken > .happychicken_area > .happychicken_description h1{
+    .content_box > .content_box_area > .content_description h1{
         margin-bottom: 5px;
         font-size: 20px;
         z-index: 2;
     }
-    .happychicken > .happychicken_area > .happychicken_description span{
+    .content_box > .content_box_area > .content_description span{
         
         font-size: 12px;
     }
-    .happychicken > .happychicken_area > .happychicken_description > h1::after{
+    .content_box > .content_box_area > .content_description > h1::after{
         height: 20px;
         background-color: #FFDD00;
         z-index: -1;
     }
-
+    .content_box > .content_box_area > .content_description ul{
+        text-align: left;
+        font-size: 12px;
+    }
+    .Certification_details{
+        margin-top: 130px;
+        height: 500px;
+    }
+    .
 
 }
