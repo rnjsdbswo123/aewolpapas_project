@@ -1,13 +1,13 @@
 // 메뉴 리스트 구현
-var menu_li = ['메뉴 구현1', '메뉴 구현2', '메뉴 구현3', '메뉴 구현4']
-var shoping_ptn = ['구매하러 가기']
+const menu_li = ['메뉴 구현1', '메뉴 구현2', '메뉴 구현3', '메뉴 구현4']
+const shoping_ptn = ['구매하러 가기']
 console.log(menu_li[0])
 function print_Menu_li(){
-    var item_li_append =""
-    for(var a = 0; a < 2; a++){
+    let item_li_append =""
+    for(let a = 0; a < 2; a++){
         item_li_append=""
-        var find_li_item = document.getElementsByClassName('menu_1_ul')[a]
-        for (var i = 0; i < menu_li.length; i++) {
+        const find_li_item = document.getElementsByClassName('menu_1_ul')[a]
+        for (let i = 0; i < menu_li.length; i++) {
                 
                 item_li_append += '<li><a class="menu_1_item" href="#">' + menu_li[i] + '</a></li>'
         }
@@ -22,15 +22,53 @@ function mobileMenuOn(){
 function mobileMenuOff(){
     findMobileMenu.style.display="none"
 }
-const findTopBar = document.getElementsByClassName('Certification_details_img')[0]
+
 // 메뉴 리스트 구현 끝
 // 함수 실행
 print_Menu_li()
 
 
+// 현재 가로 값 window.innerWidth
 
-// 스크롤 이벤트 알아보는 중
-// function dd(){
-//     console.log("ddd");
-// }
-// findTopBar.addEventListener("scroll",dd);
+// Y축 이동 시 이미지 opacity 값 주기
+function pcImgOpacity(){
+const scrollHeight = window.scrollY;
+    if (scrollHeight >370){
+        document.getElementsByClassName("Certification_details_img")[0].className="Certification_details_img_on"
+    }
+}
+function mobileImgOpacity(){
+    const scrollHeight = window.scrollY;
+    if (scrollHeight >500){
+        document.getElementsByClassName("Certification_details_img")[0].className="Certification_details_img_on"
+    }
+}
+// width값 따라 scrollY 값 변경
+function resizeOpacity(){
+    let winWidth = window.innerWidth
+    if(winWidth >767){
+        document.addEventListener("scroll",pcImgOpacity);
+    }
+    else {
+        document.addEventListener("scroll",mobileImgOpacity);
+    }
+}
+
+function opacityResize(){
+    if(document.getElementById("Certification_img").className='Certification_details_img_on'){
+    }
+    else if(document.getElementById("Certification_img").className='Certification_details_img'){
+        window.addEventListener("resize",resizeOpacity)
+        resizeOpacity()
+    }
+
+}
+
+document.addEventListener("scroll",opacityResize)
+
+// width 값 767미만 opacity 값
+
+
+
+
+

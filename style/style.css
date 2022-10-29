@@ -216,9 +216,24 @@ section{border-bottom: 15px solid rgba(0,0,0,0.1);}
 .Certification_details_area{
     flex-direction: row-reverse;
 }
-.Certification_details_area > .Certification_detail_img{
+.Certification_details_area > .Certification_details_img{
+    position: relative;
+    left:50px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    opacity: 0;
+    
+}
+.Certification_details_area > .Certification_details_img_on{
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    opacity: 1;
+    left: 0;
+    transition: opacity 1.5s, left 2s;
 
-    margin-left:auto;
 }
 .Certification_details_area > .Certification_details_description{
     margin-left: 50px;
@@ -467,6 +482,12 @@ section{border-bottom: 15px solid rgba(0,0,0,0.1);}
     .Certification_details{
         margin-top: 130px;
         height: 500px;
+    }
+    .Certification_details_img_on{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        
     }
     
 
