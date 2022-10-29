@@ -14,15 +14,23 @@ function print_Menu_li(){
         find_li_item.innerHTML = item_li_append
     }
 }
-
+const findMobileMenu = document.getElementById('mobile_menu')
 function mobileMenuOn(){
-    document.getElementById('mobile_menu').style.display="flex"
-    document.getElementById('mobile_menu').style.height="520vw"
+    findMobileMenu.style.display="flex"
+    findMobileMenu.style.height="520vw"
 }
 function mobileMenuOff(){
-    document.getElementById('mobile_menu').style.display="none"
+    findMobileMenu.style.display="none"
 }
+const findTopBar = document.getElementsByClassName('Certification_details_img')[0]
 // 메뉴 리스트 구현 끝
 // 함수 실행
 print_Menu_li()
 
+
+
+// 스크롤 이벤트 알아보는 중
+// function dd(){
+//     console.log("ddd");
+// }
+// findTopBar.addEventListener("scroll",dd);
