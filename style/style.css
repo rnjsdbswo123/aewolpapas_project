@@ -232,7 +232,7 @@ section{border-bottom: 15px solid rgba(0,0,0,0.1);}
     margin-right: auto;
     opacity: 1;
     left: 0;
-    transition: opacity 1.5s, left 2s;
+    transition: opacity 2.5s, left 3s;
 
 }
 .Certification_details_area > .Certification_details_description{
