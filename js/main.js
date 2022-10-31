@@ -29,31 +29,26 @@ print_Menu_li()
 
 
 // 현재 가로 값 window.innerWidth
-let count = 0
 // Y축 이동 시 이미지 opacity 값 주기
+
+
 function pcImgOpacity(){
-const scrollHeight = window.scrollY;
-    if(document.getElementById("Certification_img").className == 'Certification_details_img_on'){
+    const scrollHeight = window.scrollY;
+    if(document.getElementById("Certification_img").className === 'Certification_details_img_on'){
     }
     else if (scrollHeight >500){
-        document.getElementById("Certification_img").className='Certification_details_img_on'
-        count = 1;
-        // console.log(scrollHeight)
+        document.getElementById("Certification_img").className = 'Certification_details_img_on'
     }
-    return count
 }
 function mobileImgOpacity(){
     const scrollHeight = window.scrollY;
-    if(document.getElementById("Certification_img").className == 'Certification_details_img_on'){
-        // console.log(scrollHeight)
+    if(document.getElementById("Certification_img").className === 'Certification_details_img_on'){
     }
     else if (scrollHeight >850){
-        document.getElementById("Certification_img").className ='Certification_details_img_on'
-        console.log(scrollHeight)
+        document.getElementById("Certification_img").className = 'Certification_details_img_on'
     }
-
-    return count;
 }
+
 // width값 따라 scrollY 값 변경
 function resizeOpacity(){
     let winWidth = window.innerWidth
@@ -67,14 +62,10 @@ function resizeOpacity(){
 
 
 function opacityResize(){
-    if(document.getElementById("Certification_img").className =='Certification_details_img content_img'){
+    if(document.getElementById("Certification_img").className ==='Certification_details_img content_img'){
         window.addEventListener("resize",resizeOpacity)
         resizeOpacity()
     }
-    else{
-
-    }
-
 }
 document.addEventListener("scroll",opacityResize)
 
